@@ -1,0 +1,529 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+.Header {
+  background: black;
+  padding: 0 20px;
+}
+
+.Hcontent {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .tmdblogo {
+    width: 0px;
+  }
+
+  .rmdblogo {
+    width: 120px;
+  }
+  .HIcontent {
+    padding: 20px;
+    margin: 0;
+    text-align: left;
+  }
+
+  .HItext {
+    position: absolute;
+    max-width: 768px;
+    margin-right: 20px;
+    bottom: 0;
+    margin-bottom: 10px;
+    background: transparent;
+  }
+
+  .h1 {
+    font-size: 1.2rem;
+    background: transparent;
+    color: white;
+  }
+
+  .p1 {
+    bottom: 0px;
+    font-size: 1rem;
+    background: transparent;
+    color: white;
+  }
+
+  .director {
+    margin: 0 0 0 15px;
+    background: transparent;
+  }
+
+  .columnr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(44, 40, 40);
+    border-radius: 20px;
+    margin: 20px;
+    flex: 1;
+  }
+  .Infocontent {
+    display: flex;
+    max-width: 720px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    font-family: sans-serif;
+  }
+  .Infotext {
+    width: 100%;
+    padding: 20px 40px;
+    color: white;
+    overflow: hidden;
+    background: transparent;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .rmdblogo {
+    width: 100px;
+  }
+  .Infocontent {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    font-family: sans-serif;
+  }
+  .columnr {
+    display: none;
+  }
+  .Infotext {
+    width: 100%;
+    padding: 20px 40px;
+    color: white;
+    overflow: hidden;
+    background: transparent;
+    max-width: 300px;
+  }
+  .title {
+    max-width: 270px;
+  }
+
+  .overview {
+    max-width: 270px;
+  }
+  .overview {
+    max-width: 270px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tmdblogo {
+    width: 150px;
+  }
+  .rmdblogo {
+    width: 150px;
+  }
+  .HIcontent {
+    position: absolute;
+    max-width: 600px;
+    margin-right: 20px;
+    bottom: 0;
+    margin-bottom: 10px;
+    background: transparent;
+    margin-left: 20px;
+  }
+
+  .HItext {
+    background: none;
+    color: transparent;
+  }
+  .h1 {
+    font-size: 1.4rem;
+    background: transparent;
+    color: white;
+  }
+
+  .p1 {
+    bottom: 0px;
+    font-size: 1.2rem;
+    background: transparent;
+    color: white;
+  }
+  .rating {
+    background: transparent;
+  }
+  .dir {
+    margin-bottom: 5px;
+    background: transparent;
+  }
+  .director {
+    margin: 0 0 0 15px;
+    background: transparent;
+  }
+  .columnr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(44, 40, 40);
+    border-radius: 20px;
+    margin: 20px;
+    flex: 1;
+  }
+  .Infocontent {
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    font-family: sans-serif;
+  }
+  .Infotext {
+    width: 100%;
+    padding: 20px 40px;
+    color: white;
+    overflow: hidden;
+    background: transparent;
+  }
+}
+
+.Grid {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background: black;
+}
+
+.Gcontent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 2rem;
+}
+.img3 {
+  width: 100%;
+  max-width: 720px;
+  transition: all 0.3s;
+  object-fit: cover;
+  border-radius: 20px;
+  animation: animateThumb 0.5s;
+  background: transparent;
+}
+
+.img3:hover {
+  opacity: 0.8;
+}
+
+@keyframes animateThumb {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.spinner {
+  border: 5px solid #eee;
+  border-top: 5px solid #353535;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  margin: 20px auto;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.SearchBar {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background: black;
+  padding: 0 20px;
+  margin-bottom: 0px;
+}
+
+.SBcontent {
+  position: relative;
+  max-width: 1280px;
+  width: 100%;
+  height: 45px;
+  background: #353535;
+  margin: 0 auto;
+  border-radius: 40px;
+  color: white;
+}
+
+.searchicon {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  width: 25px;
+  background: transparent;
+}
+
+.input {
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  margin: 5px 0;
+  padding: 0 0 0 60px;
+  border: 0;
+  width: 95%;
+  background: transparent;
+  height: 40px;
+  color: white;
+  outline: none;
+}
+
+.button {
+  background: #01b4e4;
+  display: block;
+  color: black;
+  width: 25%;
+  max-width: 200px;
+  height: 60px;
+  border-radius: 35px;
+  border: 0;
+  font-size: 1.3rem;
+  outline: none;
+  cursor: pointer;
+  margin: 20px auto;
+  transition: all 0.3s;
+}
+.button:hover {
+  opacity: 0.8;
+}
+
+.BreadCrumb {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+}
+
+.BCcontent {
+  display: flex;
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 20px;
+}
+.spanb {
+  color: #01b4e4;
+}
+.spana:hover {
+  background: gray;
+  color: black;
+}
+.spana {
+  color: #01b4e4;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+span {
+  font-size: 1.2rem;
+  padding-right: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.rating-directors {
+  justify-content: flex-start;
+  display: flex;
+  line-height: 20px;
+  background: transparent;
+}
+.p6 {
+  margin: 0;
+  background: transparent;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  color: black;
+  font-weight: 800;
+  border-radius: 25px;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.InfoBar {
+  display: flex;
+  align-items: center;
+  background: black;
+  color: white;
+  min-height: 100px;
+  padding: 0 20px;
+}
+
+.IBcontent {
+  display: flex;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(44, 40, 40);
+  border-radius: 20px;
+  margin: 20px;
+  flex: 1;
+}
+
+.Actor {
+  color: black;
+  background: #01b4e4;
+  border-radius: 20px;
+  padding: 5px;
+  text-align: center;
+}
+
+.h8 {
+  margin: 10px 0 0 0;
+  background: #01b4e4;
+}
+.p8 {
+  margin: 5px 0;
+  background: #01b4e4;
+}
+
+.img8 {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .Infocontent {
+    display: block;
+    max-width: none;
+  }
+  .h6 {
+    font-size: 1.2rem;
+  }
+  .Infotext {
+    max-width: 400px;
+  }
+  .rating {
+    background: transparent;
+    font-size: 15px;
+  }
+  .dir {
+    margin-bottom: 5px;
+    background: transparent;
+    font-size: 15px;
+  }
+  .p7 {
+    background: transparent;
+    color: white;
+    font-size: 13px;
+  }
+  .InfoBar {
+    display: flex;
+    align-items: center;
+    background: black;
+    color: white;
+    min-height: 70px;
+    padding: 0 20px;
+  }
+}
+
+.p7 {
+  background: transparent;
+  color: white;
+}
+
+.movielink {
+  color: #01b4e4;
+}
+
+.date {
+  line-height: 20px;
+}
+
+.header {
+  color: #01b4e4;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.title {
+  background: transparent;
+}
+
+.plot {
+  background: transparent;
+}
+
+.Thumb {
+  background: transparent;
+}
+.overview {
+  background: transparent;
+}
+
+.rate {
+  background: transparent;
+}
+
+.div {
+  color: #01b4e4;
+}
+
+.daten {
+  background: none;
+}
+
+.date {
+  background: transparent;
+}
+
+.col {
+  background: transparent;
+}
+
+.movielink:hover {
+  background: gray;
+  color: black;
+}
+
+.movielink {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.tvlink {
+  padding-right: 5px;
+  padding-left: 5px;
+  color: #01b4e4;
+}
+
+.tvlink:hover {
+  background: gray;
+  color: black;
+}
