@@ -40,4 +40,6 @@ Search for movies or Tv series that you wish for or just browse through the cata
 <br />
 Get to know the cast members and a concise plot summary
 
+<br />
+
 ![demo3](https://user-images.githubusercontent.com/26281852/137086054-5c2f7ad6-a7ed-43de-9e11-e54e689d9ede.png)
